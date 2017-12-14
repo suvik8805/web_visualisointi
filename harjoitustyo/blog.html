@@ -3,13 +3,15 @@
 <head>
 <title>Web-visualisointi - harjoitustyö</title>
 <meta charset="utf-8">
+    
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <main>
-    <nav class="navbar navbar-expand-lg"><ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg"  data-spy="affix" data-offset-top="197"><ul class="navbar-nav mr-auto">
         <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -21,7 +23,7 @@
         <img id="header_img" src="images/header_img.png" class="img-fluid" alt="Responsive image">
     </header>
 <section> 
-    <article>
+    <article id="post1">
         <h2>Post 1</h2>
         <img  class="img-fluid" id="postimg" alt="Responsive image" src="images/post1_img1.png" >
         <img class="img-fluid" id="postimg" alt="Responsive image" src="images/poat1_img2.png">
@@ -58,15 +60,13 @@
         <img class="img-fluid" id="postimg" alt="Responsive image" src="images/post5_img2.png">
         <p>Donec aliquam felis ut massa fermentum, quis varius lorem aliquet. Integer eu pellentesque elit. Suspendisse vitae libero mattis, laoreet felis ac, commodo turpis. Aliquam lacinia ligula vulputate nibh convallis mollis. Quisque vel iaculis libero, eu venenatis diam. Suspendisse pellentesque hendrerit mi non sodales. Nam libero risus, mattis ac ante et, bibendum consectetur leo. In non est eget tortor porta molestie. Maecenas in tortor lacus. In tincidunt turpis at nibh efficitur, ac mollis ipsum iaculis. Duis vel consequat nisl, eu tincidunt urna. Cras viverra enim a metus malesuada, sed lacinia ligula venenatis. Etiam ut mi et justo sagittis finibus.</p>
     </article>
-    <nav aria-label="..." id="pagenav">
-  <ul class="pagination">
+  <nav aria-label="Page navigation" id="pages">
+  <ul class="pagination justify-content-center pages">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item active">
-      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
       <a class="page-link" href="#">Next</a>
@@ -74,7 +74,6 @@
   </ul>
 </nav>
 </section>
-<aside>Sivujuttu</aside>
 <footer>Web-visualisointi -harjoitustyö<br>Suvi Jyläskoski</footer>
 </main>    
 </body>
