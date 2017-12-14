@@ -4,10 +4,11 @@
 }
 
 body {
-    background: #EBEBE9;
-    background-image: linear-gradient(-70deg, rgba(255,255,255,0.35) 3%, rgba(0,0,0,0.35) 100%),
-        radial-gradient(101% 97%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 98%);
-    background-blend-mode: normal,normal,lighten;
+        background-color: #E1E6EC;
+    background-image: 
+        linear-gradient(-180deg, #E1E6EC 2%, #F0F4F7 96%),
+        radial-gradient(at 50% 100%, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.5) 200%);
+    background-blend-mode: normal, color-burn;
 }
 main {
     width: 80%;
@@ -30,10 +31,12 @@ a:visited {
 
 header {
     height: 400px;
-    background-color: #808080;
+    background: #EBEBE9;
+    background-image: linear-gradient(-70deg, rgba(255,255,255,0.35) 3%, rgba(0,0,0,0.35) 100%),
+        radial-gradient(101% 97%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 98%);
+    background-blend-mode: normal,normal,lighten;
     width: 100%;
     padding: 0;
-    margin: auto;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +50,7 @@ header {
     width 30%;
     display: flex;
     height: auto; 
-    max-width: 400px; 
+    max-width: 100%; 
     max-height: 400px;
 }
 
@@ -73,18 +76,45 @@ h1{
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    padding: 30px;
+}
 #name {
     
 }
 
+#postimg {
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
 p {
-    padding-left: 3%;
+    padding-left: 5%;
     padding-right: 3%;
+}
+
+.pagination {
+    background-color: bisque;
+    align-items: center;
+}
+
+#carouselExampleSlidesOnly {
+    width: 50%;
+    justify-content: center;
 }
 
 footer {
     background-color: black;
-    height: 50px;
+    color: azure;
+    padding: 1%;
+    text-align: center
 }
 
 @media screen and (max-width: 1000px) {
