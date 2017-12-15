@@ -19,10 +19,20 @@ main {
     
 }
 
-nav {
+#navBar {
     background-color: black;
     color: azure;
     border-radius: 1px;
+    width: 80%;
+    height: 60px;
+    display: block;
+    margin: auto
+}
+
+#navBarCollapse{
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
 div.card a span { 
@@ -47,7 +57,7 @@ a:visited {
 }
 
 header {
-    height: 400px;
+    height: auto;
     background: #EBEBE9;
     background-image: linear-gradient(-70deg, rgba(255,255,255,0.35) 3%, rgba(0,0,0,0.35) 100%),
         radial-gradient(101% 97%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 98%);
@@ -57,30 +67,36 @@ header {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    margin-top:55px; 
 }
 
-#header_sec {
-    
+header > .row {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
 }
 
 #header_img {
-    width 30%;
     display: flex;
     height: auto; 
     max-width: 100%; 
-    max-height: 400px;
+    max-height: 600px;
+    padding-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
 }
 
 #header_cap {
-    width: 65%;
-    display: flex;
-    padding-top: 100px;
-    padding-left: 20%;
+    padding-top: 5%;
+    padding-left: 15%;
+    align-content: center;
 }
 
 h1.header_text {
-    font-size: 7em;
-    text-shadow: 2px 2px black;
+    font-size: 10vw;
+    text-shadow: 1px 1px black;
     
 }
 

@@ -11,16 +11,32 @@
 </head>
 <body>
 <main>
-    <nav class="navbar navbar-expand-lg"  data-spy="affix" data-offset-top="197"><ul class="navbar-nav mr-auto">
-        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item active"><a class="nav-link" href="favourites.html">Favourites</a></li>
-    </ul></nav>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav" id="navBar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+          </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="favourites.html">Favourites<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
  <header>
-        <figcaption id="header_cap" >
-            <h1 class="header_text">My Blog</h1></figcaption>
-        <img id="header_img" src="images/header_img.png" class="img-fluid" alt="Responsive image">
+     <div class="row">
+  <div class="col-6 col-md-8" id="header_cap"><h1 class="header_text">My Blog</h1></div>
+  <div class="col-6 col-md-4" id="imgcont"><img src="images/header_img.png" id="header_img" ></div>
+</div>
     </header>
 <section> 
     <article id="post1">
