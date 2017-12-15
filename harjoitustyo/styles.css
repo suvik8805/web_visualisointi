@@ -24,16 +24,17 @@ main {
     color: azure;
     border-radius: 1px;
     width: 80%;
-    height: 60px;
+    height: auto;
     display: block;
     margin: auto
 }
 
-#navBarCollapse{
+/*#navBarCollapse{
     margin: 0;
     padding: 0;
     background-color: black;
-}
+    height: auto;
+} */
 
 div.card a span { 
   position:absolute; 
