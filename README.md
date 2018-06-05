@@ -1,4 +1,4 @@
-Harkat vko 46:
+Harkat vko 44:
 Transition-harkka
 
 
