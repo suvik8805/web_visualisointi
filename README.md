@@ -80,3 +80,81 @@ body {
   width: 500px;
   transition: width 5s ease;
 }
+
+
+
+Animation -harkka
+
+HTML
+<div class="switch">
+  <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  <label id=toggle for="cmn-toggle-1"></label>
+</div>
+
+CSS
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cmn-toggle {
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.cmn-toggle-round + label {
+  width: 500px;
+  height: 60px;
+  background-color: #00ff40;
+  border-radius: 70px;
+}
+.cmn-toggle-round + label:before,
+.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+}
+.cmn-toggle-round + label:after {
+  width: 58px;
+  background-color: #0000ff;
+  border-radius: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.cmn-toggle-round:checked + label:before {
+  background-color: #90B9FF;
+}
+.cmn-toggle-round:checked + label:after {
+  @keyframes toggle {
+  0% {
+    margin-left: 0px;
+  }
+  25% {
+    margin-left: 111px;
+  }
+  50% {
+    margin-left: 223px;
+  }
+      75% {
+    margin-left: 334px;
+  }
+  100% {
+    margin-left: 445px;
+}
+ 
+    #toggle {
+      animation: toggle 5s infinite;
+    }
+  }
