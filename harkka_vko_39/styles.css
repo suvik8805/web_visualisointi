@@ -21,12 +21,21 @@ h1, h2, h3{
     font-size: 3vw;
 }
 
+ul {
+    display: flex;
+    
+}
+
+li {
+    
+}
 
 
-@media screen and (max-width: 1023px){
+
+@media screen and (min-width: 801px){
     img {
-        width: 600px;
-        display: inline-flex;
+        width: 90%;
+        display: inline-block;
         margin: auto;
     }
 }
@@ -34,13 +43,70 @@ h1, h2, h3{
 
 @media screen and (max-width: 480px){
     
+    #container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+    }
+    
+    article > img {
+        width: 80%;
+        display: inline-block;
+        margin: auto;
+        
+    }
+   #container > article {
+        display: inline-block;
+        width: 90%;
+       margin: auto;
+        
+    }
     img {
-        width: 300px;
-        display: inline-grid;
+        width: 70%;
         margin: auto;
     }
+    
+    ul > li {
+    flex-basis: 80%;
+  }
+  li {
+    order: 1;
+  }
+}
 }
 
+
+@media screen and (max-width: 800px)and (min-width: 481px){
+    
+    #container {
+  display: flex;
+  background-color: lightcoral;
+    }
+    
+    article > img {
+        width: 90%;
+        display: inline-block;
+        margin: auto;
+        
+    }
+   #container > article {
+        display: inline-block;
+        width: 45%;
+       margin: auto;
+        
+    }
+        img {
+        width: 95%;
+        margin: auto;
+    }
+ ul {
+    flex-wrap: wrap;
+  }
+  
+  ul > li {
+    flex-basis: 50%;
+  }
+}
 
 
 #container {
@@ -52,6 +118,8 @@ h1, h2, h3{
     flex-wrap: wrap;
 }
 
+
+
 article {
     width: 50%;
     height: auto;
@@ -60,4 +128,5 @@ article {
     box-sizing: border-box;
     border: 1px solid olive;
     padding: 10px;
+    display: inline-block;
 }
