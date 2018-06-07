@@ -1,0 +1,45 @@
+body {
+    margin: 0;    
+}
+
+/* Make everything use border-box*/
+*, *:before, *after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header, section, nav, main, article {
+    display: block;
+    width: 100vw;
+    padding: 15px;
+    text-align: center;
+     
+}
+
+nav {
+    background-color: #5995DA;
+}
+header {
+    background-color: #B2D6FF;
+}
+main {
+    background-color: #EAEDF0;
+}
+section {
+    background-color: #D6E9FE;
+}
+
+/* Background colors */
+
+.bg-yellow {
+    background-color: #F5CF8E;
+}
+
+.bg-red {
+    background-color: #F09A9D;
+}
+
+.bg-purple{
+    background-color: #C8C6FA;
+}
